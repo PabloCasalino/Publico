@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="formulario.css"
-  </head>
-  <body>
+    <link rel="stylesheet" href="formulario.css"/>
 
-    <form class="formulario">
+  </head>
+
+  <body>
+            <!-- FORMULARIO -->
+   <form class="formulario">
       <label>Nombre</label>
-      <input class="nombre" type="text" />
+      <input id="nombre" type="text" />
       <label>Apellido</label>
       <input class="apellido" type="text" />
       <label>Teléfono</label>
@@ -23,7 +25,101 @@
       <input class="vendedor" type="vendedor" />
       <label>E-mail</label>
       <input class="email" type="email" />
-      <button class="button" type="submit">Proceder</button>
-    </form>
+      <button onclick="generarPresupuesto()" class="button" type="submit">Proceder</button>
+    </form> 
+
+          <!-- PRESUPUESTO -->
+           <!-- Header-->
+
+    <img src="./img/header.png" alt="header" label="encabezado" />
+
+    <!-- Formulario -->
+
+    <div class="container">
+        <div class="columna">
+            <form>
+                <div class="formulario-items">
+                    <label for="nombre">Nombre</label>
+                        <input type="text" id="nombreImpreso" name="mostrarNombre" />
+                </div>
+                <div class="formulario-items">
+                    <label="telefono">Teléfono:</label>
+                        <input type="number" />
+                </div>
+                <div class="formulario-items">
+                    <label="barrio">Barrio:</label>
+                        <input type="text" />
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="columna">
+            <form>
+                <div class="formulario-items">
+                    <label>Fecha:</label>
+                    <input type="date" />
+                </div>
+                <div class="formulario-items">
+                    <label="vendedor">Vendedor:</label>
+                        <input type="text" />
+                </div>
+                <div class="formulario-items">
+                    <label="email">Email:</label>
+                        <input type="email" />
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <!-- Detalle -->
+    <div class="detalle">
+        <p><strong>NUESTRO PRESUPUESTO INCLUYE:</p></strong></p>
+    </div>
+    <div class="description-container">
+        <p class="description-items"><strong>PISCINA:</strong>Plástica Reforzada con fibra de vidrio marca MOLDEAR</p>
+        <p class="description-items"><strong>MODELO:</strong>Recta MODELO ******* MEDIDAS: medidas </p>
+        <p class="description-items"><strong>VEREDA:</strong>
+            Borde perimetral de 50cm de losetas atérmicas, antideslizantes,
+            anti-reflex marca MOLDEAR</p>
+
+        <p class="description-items"><strong>EQUIPAMIENTO:</strong>
+            Sistema de filtración fijo en casilla compuesto por tanque, carga
+            filtrante y </br> electrobomba marca VULCANO</p>
+        <p class="description-items"><strong>CAÑERÍA:</strong>
+            Cañería de PVC especialmarca TIGRE clase 10. Apta para agua
+            fría/caliente</p>
+        <p class="description-items"><strong>KIT DE LIMPIEZA:</strong>
+            Elementos necesarios para la limpieza de piscina, el cual incluye
+            limpiafondo, </br> sacahojas, manguera flotante y mango telescópico marca
+            VULCANO</p>
+        <p class="description-items"><strong>INSTALACIÓN DE PISCINA:</strong>
+            Instalación básica en terrenos normales, sin pendiente, ni rocosos </br> (SE
+            ADJUNTA DETALLE)*</p>
+        <p class="description-items"><strong>LOGÍSTICA Y MATERIALES:</strong>
+            Materiales y contenedores para la instalación en terrenos normales </br> (SE
+            ADJUNTA DETALLE)*
+        </p>
+    </div>
+
+    <!-- PRECIO -->
+
+   
+    <div class="contado">
+        <p class="texto">
+ <strong><span class="promo">PRECIO PROMOCIONAL DE CONTADO</span><span class="precio"> $3.122.255</span></strong>
+        </p>
+    </div>
+
+    <p class="texto aviso"><strong>CONSULTANOS POR NUESTRA FINANCIACIÓN</strong></p>
+
+
+    <!-- FOOTER -->
+
+    <img class="footer" src="./img/footer.png" />
+
+    <script src="presupuesto.js"></script>
   </body>
 </html>
